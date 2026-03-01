@@ -4,7 +4,7 @@ These python scripts make API calls to Vision-supported AI Models on Openrouter 
 
 ## Batch processing of large numbers of image filenames
 
-The prompt embedded in the scripts gets the AI Model to classify images taken from the folder specified with <pre>--folder</pre> and return a content-appropriate filename
+The prompt embedded in the scripts gets the AI Model to classify images taken from the folder specified with <code>--folder</code> and return a content-appropriate filename
 
 A batch file is produced which contains file rename commands for every image file processed.
 
@@ -51,13 +51,13 @@ options:
 
 ## Duplicate filename resolution with postprocess_duplicates.py
 
-Post-processing python script to append consecutive numbers to duplicate filenames within the rename batch file output by <pre>ConcurrentRemoteChristianImageFilenameGenerator.py</pre>, to make them unique.
+Post-processing python script to append consecutive numbers to duplicate filenames within the rename batch file output by <code>ConcurrentRemoteChristianImageFilenameGenerator.py</code>, to make them unique.
 
 * postprocess_duplicates.py
   
-<b>Running <pre>postprocess_duplicates.py</pre> after <pre>ConcurrentRemoteChristianImageFilenameGenerator.py</pre> is a necessary step when a large number of images with similar content have been processed.</b>
+<b>Running <code>postprocess_duplicates.py</code> after <code>ConcurrentRemoteChristianImageFilenameGenerator.py</code> is a necessary step when a large number of images with similar content have been processed.</b>
 
-To rename the images, run the batch file it outputs (eg. <pre>rename_images_final.bat</pre>) rather than that produced by ConcurrentRemoteChristianImageFilenameGenerator.py (eg. <pre>rename_images.bat</pre>)
+To rename the images, run the batch file it outputs (eg. <code>rename_images_final.bat</code>) rather than that produced by ConcurrentRemoteChristianImageFilenameGenerator.py (eg. <code>rename_images.bat</code>)
 
 ### Usage help (postprocess_duplicates.py)
 <pre>
@@ -79,9 +79,9 @@ options:
 
 ## Folder Watcher
 
-This script watches a folder <pre>--watch-folder</pre> and uses a vision AI Model to generate descriptive filenames for any images that are saved to or dropped into the folder.
+This script watches a folder <code>--watch-folder</code> and uses a vision AI Model to generate descriptive filenames for any images that are saved to or dropped into the folder.
 
-Right-click save images from the browser (or copy from elsewhere on local storage) into the folder and they will be processed, renamed and moved to the output folder <pre>--output-folder</pre>.
+Right-click save images from the browser (or copy from elsewhere on local storage) into the folder and they will be processed, renamed and moved to the output folder <code>--output-folder</code>.
 
 * ChristianImageRenamerFolderWatcher.py
 
@@ -124,5 +124,6 @@ https://drive.google.com/file/d/1Ge8A6HemhHtfEpm89Mlc4YSPtS1zv14E/view?usp=shari
 https://drive.google.com/file/d/1MOc6cB4uxx11AjGl1PttPBeT9u94xG6_/view?usp=sharing
 
 Copyright: Various, acknowledged (Fair use/Devotional use only)
+
 
 
